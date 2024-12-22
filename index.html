@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #login{
+        height: 300px;
+        border: 2px solid black;
+        width: 350px;
+        border-radius: 5px;
+    }
+
+    #login input{
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+
+    #login button{
+        background-color: dodgerblue;
+        color: white;
+        height: 25px;
+        width: 75px;
+        border-radius: 10px;
+        margin-left: 100px;
+        margin-top: 20px;
+
+    }
+    
+</style>
+<body>
+    <h1>This Project is run by Xampp server!</h1>
+
+    <form method="post" action="entry_login.php">
+        <table border="1">
+            
+               <tr>
+                    <td> Enter First name : </td>
+                    <td> <input type="text" name="first_name"></td>
+                </tr>
+                <tr>
+                    <td> Enter Last name  : </td>
+                    <td> <input type="text" name="last_name"></td>
+                </tr>
+                <tr>
+                    <td> Gender: </td>
+                    <td> 
+                    <input type="radio" name="gender">Male
+                    <input type="radio" name="gender">Female</td>
+                </tr>
+                <tr>
+                    <td> Enter Phone no  : </td>
+                    <td> <input type="number" name="phone"></td>
+                </tr>
+                <tr >
+                    <td colspan="2">
+                        <button name="save">Submit</button>
+                    </td>
+                </tr>
+        </table>
+    </form>
+</body>
+</html>
