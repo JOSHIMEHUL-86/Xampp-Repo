@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container */
+.container{
+    display: flex;
+    height: 500px;
+    width: 800px;
+    border: 1px solid black;
+    margin: auto;
+    margin-top: 50px;
+}
+
+/* Login Form */
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 50px;
+    align-items: center;
+    background-color: whitesmoke;
+}
+.form h2{
+    font-size: 3rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 40px;
+}
+.box{
+    padding: 12px;
+    width: 65%;
+    margin: 15px;
+    border: 1px solid black;
+    outline: none;
+    border-radius: 20px;
+}
+
+#submit{
+    padding: 12px 30px;
+    width: 40%;
+    margin-top: 40px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+}
+#submit:hover{
+    cursor: pointer;
+    background-color: #750000;
+}
+.form a{
+    text-decoration: none;
+    color: black;
+    margin-top: 20px;
+}
+
+    </style>
+</head>
+<body>
+    <h1>Sign-Up Page</h1>
+    <div class="container">
+    <form id="signUp">
+        <input type="text" name="firstName" class="box" placeholder="Enter first name" id="firstName">
+        <input type="text" name="lastName" class="box" placeholder="Enter last name" id="lastName">
+        <input type="email" name="email" class="box" placeholder="Enter email " id="email">
+        <input type="password" name="password" class="box" placeholder="Enter password " id="password">
+        <input type="password" name="confimPassword" class="box" placeholder="Enter Confirm password" id="confimPassword">
+         <button type="submit" class="box">Submit</button>
+    </form>
+    </div>
+    <script src="signUpApp.js" defer></script>
+</body>
+</html>
